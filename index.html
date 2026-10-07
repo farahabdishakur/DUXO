@@ -71,12 +71,18 @@
     <span class="arrow">↓</span>
   </a>
 
+  <a id="iphone" class="dl" href="https://github.com/farahabdishakur/DUXO/releases/download/v0.5.0/DUXO-v0.5.0-iPhone.ipa" download>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.24 1.83-3.32 1.91-3.37-1.04-1.52-2.66-1.73-3.24-1.75-1.38-.14-2.69.81-3.39.81-.7 0-1.78-.79-2.92-.77-1.5.02-2.89.87-3.66 2.22-1.56 2.71-.4 6.72 1.12 8.92.74 1.07 1.63 2.28 2.79 2.24 1.12-.05 1.54-.72 2.89-.72 1.35 0 1.73.72 2.91.7 1.2-.02 1.96-1.09 2.7-2.17.85-1.24 1.2-2.45 1.22-2.51-.03-.01-2.33-.9-2.35-3.56zM14.15 6.02c.62-.75 1.03-1.78.92-2.82-.89.04-1.97.59-2.6 1.34-.57.66-1.07 1.72-.94 2.73.99.08 2-.5 2.62-1.25z"/></svg>
+    <span><b>iPhone</b><small>DUXO-v0.5.0-iPhone.ipa · 9 MB · Sideloadly (bilaash)</small></span>
+    <span class="arrow">↓</span>
+  </a>
+
   <section class="steps">
     <h2>Android</h2>
     <ol>
       <li>Taabo <b>Android</b> oo soo deji.</li>
       <li>Fur faylka, oggolow “Install unknown apps”, kadib <b>Install</b>.</li>
-      <li>Haddii WadaLink ama DUXO hore ku jiro, marka hore tirtir.</li>
+      <li>Laga bilaabo v0.5 noocyada cusub waxay ku rakibmaan kuwa hore (xogtu way haraysaa). Haddii aad haysato v0.4 ama ka hor, hal mar tirtir.</li>
     </ol>
   </section>
   <section class="steps">
@@ -85,6 +91,16 @@
       <li>Soo deji, midig-guji → <b>Extract All</b>.</li>
       <li>Fur <b>duxo.exe</b> (ha kala saarin DLL-yada iyo galka <i>data</i>).</li>
       <li>“Windows protected your PC” → <b>More info</b> → <b>Run anyway</b>.</li>
+    </ol>
+  </section>
+  <section class="steps">
+    <h2>iPhone (bilaash, Sideloadly)</h2>
+    <ol>
+      <li>PC-ga Windows: ku rakib <b>iTunes</b> iyo <b>iCloud</b> (ka soo deji apple.com, ha ka soo dejin Microsoft Store), kadib <b>Sideloadly</b> (sideloadly.io).</li>
+      <li>Soo deji <b>DUXO-v0.5.0-iPhone.ipa</b> (badhanka iPhone ee kore) PC-ga.</li>
+      <li>iPhone-ka USB ku xidh PC-ga, fur Sideloadly, ku jiid faylka IPA, geli Apple ID-gaaga, taabo <b>Start</b>.</li>
+      <li>iPhone: <b>Settings → General → VPN &amp; Device Management</b> → Apple ID-gaaga → <b>Trust</b>. iOS 16+: <b>Settings → Privacy &amp; Security → Developer Mode</b> → shid.</li>
+      <li>Apple ID bilaash ah: app-ku wuxuu shaqeeyaa 7 maalmood; kadib Sideloadly ku celi (xogtu way haraysaa).</li>
     </ol>
   </section>
   <section class="steps">
@@ -105,14 +121,12 @@
 <script>
   // Put the right download first and highlight it.
   var ua = navigator.userAgent || '';
-  var pick = /Android/i.test(ua) ? 'android' : (/Windows/i.test(ua) ? 'windows' : null);
-  if (pick) {
-    var el = document.getElementById(pick);
-    el.classList.add('primary');
-    el.parentNode.insertBefore(el, document.getElementById(pick === 'android' ? 'windows' : 'android'));
-  } else {
-    document.getElementById('android').classList.add('primary');
-  }
+  var pick = /iPhone|iPad|iPod/i.test(ua) ? 'iphone'
+    : /Android/i.test(ua) ? 'android'
+    : /Windows/i.test(ua) ? 'windows' : 'android';
+  var el = document.getElementById(pick);
+  el.classList.add('primary');
+  el.parentNode.insertBefore(el, document.getElementById('android'));
 </script>
 </body>
 </html>
