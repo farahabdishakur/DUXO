@@ -5,7 +5,7 @@ Fariimo Bluetooth ah oo internet la'aan ah — qoyska iyo saaxiibbada. Lambar te
 ## Soo dejin
 
 - **Bogga soo dejinta:** https://farahabdishakur.github.io/DUXO/
-- **Android:** [DUXO-v0.3.0.apk](https://github.com/farahabdishakur/DUXO/releases/download/v0.3.0/DUXO-v0.3.0.apk)
-- **Windows:** [DUXO-v0.3.0-Windows.zip](https://github.com/farahabdishakur/DUXO/releases/download/v0.3.0/DUXO-v0.3.0-Windows.zip)
+- **Android:** [DUXO-v0.3.1.apk](https://github.com/farahabdishakur/DUXO/releases/download/v0.3.1/DUXO-v0.3.1.apk)
+- **Windows:** [DUXO-v0.3.1-Windows.zip](https://github.com/farahabdishakur/DUXO/releases/download/v0.3.1/DUXO-v0.3.1-Windows.zip)
 
-Nooc tijaabo ah (v0.3.0).
+Nooc tijaabo ah (v0.3.1).
